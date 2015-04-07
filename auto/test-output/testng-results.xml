@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12262" started-at="2015-04-07T22:31:25Z" finished-at="2015-04-07T22:31:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12262" started-at="2015-04-07T22:31:25Z" finished-at="2015-04-07T22:31:38Z">
+      <class name="org.wellaware.test.auto.TestAutomatedPageConfigurator">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@40eca3]" name="setup" is-config="true" duration-ms="10240" started-at="2015-04-07T17:31:25Z" finished-at="2015-04-07T17:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@40eca3]" name="assertValueMatchesSelection" duration-ms="1561" started-at="2015-04-07T17:31:36Z" finished-at="2015-04-07T17:31:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertValueMatchesSelection -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@40eca3]" name="tearDown" is-config="true" duration-ms="447" started-at="2015-04-07T17:31:37Z" finished-at="2015-04-07T17:31:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.wellaware.test.auto.TestAutomatedPageConfigurator -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
