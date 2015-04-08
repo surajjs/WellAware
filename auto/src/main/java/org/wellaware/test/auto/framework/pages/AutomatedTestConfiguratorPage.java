@@ -1,23 +1,16 @@
 package org.wellaware.test.auto.framework.pages;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.wellaware.test.auto.TestData;
 import org.wellaware.test.auto.framework.locators.Locators;
 import org.wellaware.test.auto.framework.util.WebElementQueryHelper;
-import org.wellaware.test.auto.framework.TestData;
-
-;
 
 /**
- * Class that models the Automated Test Configurator Page.
+ * Class that models Automated Test Configurator Page
  * 
+ * @author Suraj J
  * 
  */
 
@@ -33,13 +26,13 @@ public class AutomatedTestConfiguratorPage {
 		sizzle = new WebElementQueryHelper(driver);
 	}
 
-	private void selectSeleniumAPI() {
+	private void selectSeleniumAsAPI() {
 		sizzle.findElementByExtendedCss(
 				Locators.AutomatedTestConfiguratorPage.SELENIUM_API_BUTTON)
 				.click();
 	}
 
-	private void selectAppiumAPI() {
+	private void selectAppiumAsAPI() {
 		sizzle.findElementByExtendedCss(
 				Locators.AutomatedTestConfiguratorPage.APPIUM_API_BUTTON)
 				.click();
@@ -48,23 +41,35 @@ public class AutomatedTestConfiguratorPage {
 	public void selectAPI(TestData.APIType selectedAPIType) {
 
 		if (selectedAPIType == TestData.APIType.SELENIUM)
-			selectSeleniumAPI();
+			selectSeleniumAsAPI();
 		else if (selectedAPIType == TestData.APIType.APPIUM)
-			selectAppiumAPI();
+			selectAppiumAsAPI();
 	}
 
-	public void selectDevice() {
+	private void selectDeviceAsPC() {
 		sizzle.findElementByExtendedCss(
 				Locators.AutomatedTestConfiguratorPage.DEVICE_DROPDOWN).click();
 		sizzle.findElementByExtendedCss(".list-element :contains('PC')")
 				.click();
 	}
 
-	public void selectOS() {
+	public void selectDevice(TestData.DeviceType selectedDeviceType) {
+		if (selectedDeviceType == TestData.DeviceType.PC) {
+			selectDeviceAsPC();
+		}
+	}
+
+	private void selectLinuxAsOS() {
 		sizzle.findElementByExtendedCss(".select-logo.select").click();
 		sizzle.findElementByExtendedCss(".list-element :contains('Linux')")
 				.click();
-		
+
+	}
+
+	public void selectOS(TestData.OSType selectedOSType) {
+		if (selectedOSType == TestData.OSType.Linux) {
+			selectLinuxAsOS();
+		}
 	}
 
 	public void selectBrowser() {
@@ -92,7 +97,7 @@ public class AutomatedTestConfiguratorPage {
 
 	public String getCode() {
 		String code = sizzle.findElementByExtendedCss(".hljs.ruby").getText();
-	return code;	
+		return code;
 	}
 
 }

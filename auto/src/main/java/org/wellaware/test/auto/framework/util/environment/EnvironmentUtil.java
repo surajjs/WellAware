@@ -1,6 +1,6 @@
 package org.wellaware.test.auto.framework.util.environment;
 
-import org.wellaware.test.auto.framework.TestData;
+import org.wellaware.test.auto.TestData;
 import org.wellaware.test.auto.framework.util.Constants;
 
 public class EnvironmentUtil {

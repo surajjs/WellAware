@@ -1,7 +1,9 @@
 package org.wellaware.test.auto.framework.locators;
 
 /**
- * Central repository for all object locators.
+ * Central Repository for all locators
+ * 
+ * @author Suraj J
  * 
  */
 
