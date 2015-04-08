@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12262" started-at="2015-04-07T22:31:25Z" finished-at="2015-04-07T22:31:38Z">
+  <suite name="Default suite" duration-ms="7274" started-at="2015-04-08T06:22:30Z" finished-at="2015-04-08T06:22:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12262" started-at="2015-04-07T22:31:25Z" finished-at="2015-04-07T22:31:38Z">
+    <test name="Default test" duration-ms="7274" started-at="2015-04-08T06:22:30Z" finished-at="2015-04-08T06:22:37Z">
       <class name="org.wellaware.test.auto.TestAutomatedPageConfigurator">
-        <test-method status="PASS" signature="setup()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@40eca3]" name="setup" is-config="true" duration-ms="10240" started-at="2015-04-07T17:31:25Z" finished-at="2015-04-07T17:31:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@2f27f2bb]" name="setup" is-config="true" duration-ms="4140" started-at="2015-04-08T01:22:30Z" finished-at="2015-04-08T01:22:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@40eca3]" name="assertValueMatchesSelection" duration-ms="1561" started-at="2015-04-07T17:31:36Z" finished-at="2015-04-07T17:31:37Z">
+        <test-method status="PASS" signature="assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@2f27f2bb]" name="assertValueMatchesSelection" duration-ms="2855" started-at="2015-04-08T01:22:34Z" finished-at="2015-04-08T01:22:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertValueMatchesSelection -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@40eca3]" name="tearDown" is-config="true" duration-ms="447" started-at="2015-04-07T17:31:37Z" finished-at="2015-04-07T17:31:38Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@2f27f2bb]" name="tearDown" is-config="true" duration-ms="270" started-at="2015-04-08T01:22:37Z" finished-at="2015-04-08T01:22:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

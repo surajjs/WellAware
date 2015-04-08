@@ -13,11 +13,10 @@ import org.openqa.selenium.WebElement;
  * This class helps you search for items, depending on what parameters we have
  * and how many elements we want to find
  */
-@SuppressWarnings("unchecked")
 public class WebElementQueryHelper {
 	private static final String NO_JQUERY_FAILSAFE = "if(typeof jQuery == 'undefined') return null; ";
 
-	private static final String sizzleUrl = "https://raw.github.com/jquery/sizzle/1.10.18/dist/sizzle.min.js";
+	private static final String sizzleUrl = "https://raw.github.com/jquery/sizzle/2.1.1/dist/sizzle.min.js";
 
 	// private Logger logger = Logger.getLogger(WebElementQueryHelper.class);
 
@@ -211,7 +210,7 @@ public class WebElementQueryHelper {
 	}
 
 	/**
-	 * Inject sizzle 1.8.2
+	 * Inject sizzle 2.1.1	
 	 */
 	public void injectSizzleScript() {
 		((JavascriptExecutor) webDriver)

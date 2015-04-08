@@ -6,5 +6,7 @@ public class Constants {
 		public final static String BROWSER = "FIREFOX";
 		public final static String SCREENSHOT_DIRECTORY = "c:\\tmp\\screenshot.png";
 	}
+	
+	
 
 }

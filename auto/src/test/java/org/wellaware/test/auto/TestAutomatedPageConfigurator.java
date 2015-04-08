@@ -5,12 +5,12 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.wellaware.test.auto.framework.TestData;
 import org.wellaware.test.auto.framework.pages.AutomatedTestConfiguratorPage;
 import org.wellaware.test.auto.framework.util.ScreenShot;
 import org.wellaware.test.auto.framework.util.WebDriverWrapper;
+import org.wellaware.test.auto.framework.TestData;
 
-;
+
 
 public class TestAutomatedPageConfigurator {
 
@@ -31,8 +31,15 @@ public class TestAutomatedPageConfigurator {
 
 	@Test
 	public void assertValueMatchesSelection() {
-		newPage.selectSeleniumAPI();
-		newPage.clickShowAdvancedConfiguration();
+		
+		
+		newPage.selectAPI(TestData.APIType.SELENIUM);
+		newPage.selectDevice();
+		newPage.selectOS();
+		newPage.selectBrowser();
+		newPage.setRecordVideo(false);
+		newPage.setCodeLanguage();
+		System.out.println(newPage.getCode());
 		Assert.assertTrue(true);
 	}
 
