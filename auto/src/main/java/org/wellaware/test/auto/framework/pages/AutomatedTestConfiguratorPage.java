@@ -28,13 +28,13 @@ public class AutomatedTestConfiguratorPage {
 
 	private void selectSeleniumAsAPI() {
 		sizzle.findElementByExtendedCss(
-				Locators.AutomatedTestConfiguratorPage.SELENIUM_API_BUTTON)
+				Locators.AUTOMATED_TEST_CONFIGURATOR_PAGE.SELENIUM_API_BUTTON)
 				.click();
 	}
 
 	private void selectAppiumAsAPI() {
 		sizzle.findElementByExtendedCss(
-				Locators.AutomatedTestConfiguratorPage.APPIUM_API_BUTTON)
+				Locators.AUTOMATED_TEST_CONFIGURATOR_PAGE.APPIUM_API_BUTTON)
 				.click();
 	}
 
@@ -48,7 +48,8 @@ public class AutomatedTestConfiguratorPage {
 
 	private void selectDeviceAsPC() {
 		sizzle.findElementByExtendedCss(
-				Locators.AutomatedTestConfiguratorPage.DEVICE_DROPDOWN).click();
+				Locators.AUTOMATED_TEST_CONFIGURATOR_PAGE.DEVICE_DROPDOWN)
+				.click();
 		sizzle.findElementByExtendedCss(".list-element :contains('PC')")
 				.click();
 	}
@@ -86,7 +87,6 @@ public class AutomatedTestConfiguratorPage {
 		wait.until(
 				ExpectedConditions.visibilityOf(sizzle
 						.findElementByExtendedCss("[for='box1']"))).click();
-		// sizzle.findElementByExtendedCss("input[ng-model='settingsVideo']").click();
 
 	}
 

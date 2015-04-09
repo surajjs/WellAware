@@ -3,19 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="org.wellaware.test.auto.TestWikipediaPage">
+      <class name="org.wellaware.test.auto.TestWikiTestAutomationPage">
         <methods>
-          <include name="afterTest"/>
-          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testCodeDrivenTestingHeaderExists"/>
         </methods>
-      </class> <!-- org.wellaware.test.auto.TestWikipediaPage -->
-      <class name="org.wellaware.test.auto.TestAutomatedPageConfigurator">
-        <methods>
-          <include name="assertValueMatchesSelection"/>
-          <include name="setup"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- org.wellaware.test.auto.TestAutomatedPageConfigurator -->
+      </class> <!-- org.wellaware.test.auto.TestWikiTestAutomationPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

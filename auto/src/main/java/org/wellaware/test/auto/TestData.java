@@ -15,6 +15,7 @@ public class TestData {
 
 	public final class Wikipedia {
 		public final static String URL = "http://www.wikipedia.org ";
+		public final static String SearchSring = "Continuous Delivery";
 	}
 
 	public enum APIType {

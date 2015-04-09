@@ -2,31 +2,41 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="auto by groups" duration-ms="18955" started-at="2015-04-09T06:18:56Z" finished-at="2015-04-09T06:19:15Z">
+  <suite name="auto by groups" duration-ms="34633" started-at="2015-04-09T22:19:06Z" finished-at="2015-04-09T22:19:41Z">
     <groups>
-      <group name="Wikipedia">
-        <method signature="TestWikiContinuousDeliveryPage.assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestWikiContinuousDeliveryPage@7a75479a]" name="assertValueMatchesSelection" class="org.wellaware.test.auto.TestWikiContinuousDeliveryPage"/>
-        <method signature="TestWikiTestAutomationPage.verifyHeaderCodeDrivenTesting()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@6a3d899a]" name="verifyHeaderCodeDrivenTesting" class="org.wellaware.test.auto.TestWikiTestAutomationPage"/>
-        <method signature="TestWikiTestAutomationPage.verifyHeaderOverview()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@6a3d899a]" name="verifyHeaderOverview" class="org.wellaware.test.auto.TestWikiTestAutomationPage"/>
-      </group> <!-- Wikipedia -->
+      <group name="SauceLabs">
+        <method signature="TestAutomatedPageConfigurator.testCodeMatchesExpected()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@139cf9c]" name="testCodeMatchesExpected" class="org.wellaware.test.auto.TestAutomatedPageConfigurator"/>
+      </group> <!-- SauceLabs -->
+      <group name="Wiki">
+        <method signature="TestWikiTestAutomationPage.testCodeDrivenTestingHeaderExists()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@158dd66]" name="testCodeDrivenTestingHeaderExists" class="org.wellaware.test.auto.TestWikiTestAutomationPage"/>
+        <method signature="TestWikiTestAutomationPage.testOverviewHeaderExists()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@158dd66]" name="testOverviewHeaderExists" class="org.wellaware.test.auto.TestWikiTestAutomationPage"/>
+      </group> <!-- Wiki -->
     </groups>
-    <test name="GRP-Wikipedia" duration-ms="18955" started-at="2015-04-09T06:18:56Z" finished-at="2015-04-09T06:19:15Z">
+    <test name="GRP-SauceLabs,Wiki" duration-ms="34633" started-at="2015-04-09T22:19:06Z" finished-at="2015-04-09T22:19:41Z">
+      <class name="org.wellaware.test.auto.TestAutomatedPageConfigurator">
+        <test-method status="PASS" signature="testCodeMatchesExpected()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@139cf9c]" name="testCodeMatchesExpected" duration-ms="14515" started-at="2015-04-09T17:19:06Z" finished-at="2015-04-09T17:19:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCodeMatchesExpected -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@139cf9c]" name="afterTest" is-config="true" duration-ms="6022" started-at="2015-04-09T17:19:21Z" finished-at="2015-04-09T17:19:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- org.wellaware.test.auto.TestAutomatedPageConfigurator -->
       <class name="org.wellaware.test.auto.TestWikiTestAutomationPage">
-        <test-method status="PASS" signature="verifyHeaderCodeDrivenTesting()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@6a3d899a]" name="verifyHeaderCodeDrivenTesting" duration-ms="13" started-at="2015-04-09T01:18:56Z" finished-at="2015-04-09T01:18:56Z">
+        <test-method status="PASS" signature="testCodeDrivenTestingHeaderExists()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@158dd66]" name="testCodeDrivenTestingHeaderExists" duration-ms="13626" started-at="2015-04-09T17:19:27Z" finished-at="2015-04-09T17:19:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHeaderCodeDrivenTesting -->
-        <test-method status="PASS" signature="verifyHeaderOverview()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@6a3d899a]" name="verifyHeaderOverview" duration-ms="3614" started-at="2015-04-09T01:18:56Z" finished-at="2015-04-09T01:19:00Z">
+        </test-method> <!-- testCodeDrivenTestingHeaderExists -->
+        <test-method status="PASS" signature="testOverviewHeaderExists()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@158dd66]" name="testOverviewHeaderExists" duration-ms="89" started-at="2015-04-09T17:19:40Z" finished-at="2015-04-09T17:19:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHeaderOverview -->
+        </test-method> <!-- testOverviewHeaderExists -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@158dd66]" name="tearDown" is-config="true" duration-ms="361" started-at="2015-04-09T17:19:40Z" finished-at="2015-04-09T17:19:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- org.wellaware.test.auto.TestWikiTestAutomationPage -->
-      <class name="org.wellaware.test.auto.TestWikiContinuousDeliveryPage">
-        <test-method status="PASS" signature="assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestWikiContinuousDeliveryPage@7a75479a]" name="assertValueMatchesSelection" duration-ms="15314" started-at="2015-04-09T01:19:00Z" finished-at="2015-04-09T01:19:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertValueMatchesSelection -->
-      </class> <!-- org.wellaware.test.auto.TestWikiContinuousDeliveryPage -->
-    </test> <!-- GRP-Wikipedia -->
+    </test> <!-- GRP-SauceLabs,Wiki -->
   </suite> <!-- auto by groups -->
 </testng-results>

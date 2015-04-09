@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [auto by groups]">
-  <test name="GRP-Wikipedia(failed)">
+  <test name="GRP-Wiki(failed)">
     <groups>
       <run>
-        <include name="Wikipedia"/>
+        <include name="Wiki"/>
       </run>
     </groups>
     <classes>
-      <class name="org.wellaware.test.auto.TestWikiContinuousDeliveryPage">
+      <class name="org.wellaware.test.auto.TestWikiTestAutomationPage">
         <methods>
-          <include name="assertValueMatchesSelection"/>
+          <include name="testCodeDrivenTestingHeaderExists"/>
         </methods>
-      </class> <!-- org.wellaware.test.auto.TestWikiContinuousDeliveryPage -->
+      </class> <!-- org.wellaware.test.auto.TestWikiTestAutomationPage -->
     </classes>
-  </test> <!-- GRP-Wikipedia(failed) -->
+  </test> <!-- GRP-Wiki(failed) -->
 </suite> <!-- Failed suite [auto by groups] -->

@@ -15,7 +15,6 @@ public class TestAutomatedPageConfigurator {
 	String url = "";
 	AutomatedTestConfiguratorPage automatedConfiguratorTestPage;
 
-	
 	public void setup() {
 		this.driver = WebDriverWrapper.getWebDriver();
 		this.url = TestData.GeneralData.URL;
@@ -27,7 +26,7 @@ public class TestAutomatedPageConfigurator {
 	}
 
 	@Test(groups = "SauceLabs")
-	public void assertValueMatchesSelection() {
+	public void testCodeMatchesExpected() {
 		setup();
 		automatedConfiguratorTestPage.selectAPI(TestData.APIType.SELENIUM);
 		automatedConfiguratorTestPage.selectDevice(TestData.DeviceType.PC);
@@ -42,7 +41,7 @@ public class TestAutomatedPageConfigurator {
 
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void afterTest() {
 		screenShot.capture(driver);
 		driver.quit();
