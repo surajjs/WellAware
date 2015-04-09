@@ -8,43 +8,45 @@ import org.testng.annotations.Test;
 import org.wellaware.test.auto.framework.pages.AutomatedTestConfiguratorPage;
 import org.wellaware.test.auto.framework.util.ScreenShot;
 import org.wellaware.test.auto.framework.util.WebDriverWrapper;
-import org.wellaware.test.auto.framework.TestData;
-
-
 
 public class TestAutomatedPageConfigurator {
 
 	WebDriver driver = null;
 	ScreenShot screenShot = null;
 	String url = "";
-	AutomatedTestConfiguratorPage newPage;
+	AutomatedTestConfiguratorPage automatedConfiguratorTestPage;
 
 	@BeforeTest
 	public void setup() {
 		this.driver = WebDriverWrapper.getWebDriver();
 		this.url = TestData.GeneralData.URL;
 		driver.get(url);
-		newPage = new AutomatedTestConfiguratorPage(driver);
+		automatedConfiguratorTestPage = new AutomatedTestConfiguratorPage(
+				driver);
 		screenShot = new ScreenShot();
 
 	}
 
-	@Test
+	@Test(groups = "SauceLabs")
 	public void assertValueMatchesSelection() {
-		
-		
-		newPage.selectAPI(TestData.APIType.SELENIUM);
-		newPage.selectDevice();
-		newPage.selectOS();
-		newPage.selectBrowser();
-		newPage.setRecordVideo(false);
-		newPage.setCodeLanguage();
-		System.out.println(newPage.getCode());
-		Assert.assertTrue(true);
+
+		automatedConfiguratorTestPage.selectAPI(TestData.APIType.SELENIUM);
+		automatedConfiguratorTestPage.selectDevice(TestData.DeviceType.PC);
+		automatedConfiguratorTestPage.selectOS(TestData.OSType.Linux);
+		automatedConfiguratorTestPage.selectBrowser();
+		automatedConfiguratorTestPage.setRecordVideo(false);
+		automatedConfiguratorTestPage.setCodeLanguage();
+
+		Assert.assertEquals(automatedConfiguratorTestPage.getCode(),
+				ExpectedResult.TestAutomatedPageConfigurator.expectedCode,
+				"Actual Code Matches Expected");
+
 	}
 
 	@AfterMethod
-	public void tearDown() {
-		screenShot.capture(driver);
+	public void afterTest() {
+		screenShot.capture(WebDriverWrapper.getWebDriver());
+		driver.quit();
 	}
+
 }
