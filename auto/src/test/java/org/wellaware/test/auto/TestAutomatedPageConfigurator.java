@@ -3,7 +3,6 @@ package org.wellaware.test.auto;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.wellaware.test.auto.framework.pages.AutomatedTestConfiguratorPage;
 import org.wellaware.test.auto.framework.util.ScreenShot;
@@ -16,7 +15,7 @@ public class TestAutomatedPageConfigurator {
 	String url = "";
 	AutomatedTestConfiguratorPage automatedConfiguratorTestPage;
 
-	@BeforeTest
+	
 	public void setup() {
 		this.driver = WebDriverWrapper.getWebDriver();
 		this.url = TestData.GeneralData.URL;
@@ -29,7 +28,7 @@ public class TestAutomatedPageConfigurator {
 
 	@Test(groups = "SauceLabs")
 	public void assertValueMatchesSelection() {
-
+		setup();
 		automatedConfiguratorTestPage.selectAPI(TestData.APIType.SELENIUM);
 		automatedConfiguratorTestPage.selectDevice(TestData.DeviceType.PC);
 		automatedConfiguratorTestPage.selectOS(TestData.OSType.Linux);
@@ -45,7 +44,7 @@ public class TestAutomatedPageConfigurator {
 
 	@AfterMethod
 	public void afterTest() {
-		screenShot.capture(WebDriverWrapper.getWebDriver());
+		screenShot.capture(driver);
 		driver.quit();
 	}
 

@@ -21,7 +21,7 @@ public class WikipediaHomePage {
 		sizzle.findElementByExtendedCss("#searchInput").sendKeys(searchString);
 		sizzle.findElementByExtendedCss(".formBtn:nth(0)").click();
 
-		return new ContinuousDeliveryPage(WebDriverWrapper.getWebDriver());
+		return new ContinuousDeliveryPage(driver);
 	}
 
 }

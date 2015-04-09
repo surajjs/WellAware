@@ -1,95 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="214360" started-at="2015-04-08T21:56:40Z" finished-at="2015-04-08T22:00:14Z">
+  <suite name="auto by groups" duration-ms="18955" started-at="2015-04-09T06:18:56Z" finished-at="2015-04-09T06:19:15Z">
     <groups>
-      <group name="SauceLabs">
-        <method signature="TestAutomatedPageConfigurator.assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@1d45d18]" name="assertValueMatchesSelection" class="org.wellaware.test.auto.TestAutomatedPageConfigurator"/>
-      </group> <!-- SauceLabs -->
       <group name="Wikipedia">
-        <method signature="TestTestAutomationPage.verifyHeaderCodeDrivenTesting()[pri:0, instance:org.wellaware.test.auto.TestTestAutomationPage@158dd66]" name="verifyHeaderCodeDrivenTesting" class="org.wellaware.test.auto.TestTestAutomationPage"/>
-        <method signature="TestTestAutomationPage.verifyHeaderOverview()[pri:0, instance:org.wellaware.test.auto.TestTestAutomationPage@158dd66]" name="verifyHeaderOverview" class="org.wellaware.test.auto.TestTestAutomationPage"/>
-        <method signature="TestWikipediaPage.assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestWikipediaPage@114304e]" name="assertValueMatchesSelection" class="org.wellaware.test.auto.TestWikipediaPage"/>
+        <method signature="TestWikiContinuousDeliveryPage.assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestWikiContinuousDeliveryPage@7a75479a]" name="assertValueMatchesSelection" class="org.wellaware.test.auto.TestWikiContinuousDeliveryPage"/>
+        <method signature="TestWikiTestAutomationPage.verifyHeaderCodeDrivenTesting()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@6a3d899a]" name="verifyHeaderCodeDrivenTesting" class="org.wellaware.test.auto.TestWikiTestAutomationPage"/>
+        <method signature="TestWikiTestAutomationPage.verifyHeaderOverview()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@6a3d899a]" name="verifyHeaderOverview" class="org.wellaware.test.auto.TestWikiTestAutomationPage"/>
       </group> <!-- Wikipedia -->
     </groups>
-    <test name="Default test" duration-ms="214360" started-at="2015-04-08T21:56:40Z" finished-at="2015-04-08T22:00:14Z">
-      <class name="org.wellaware.test.auto.TestWikipediaPage">
-        <test-method status="PASS" signature="assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestWikipediaPage@114304e]" name="assertValueMatchesSelection" duration-ms="1" started-at="2015-04-08T17:00:13Z" finished-at="2015-04-08T17:00:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertValueMatchesSelection -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:org.wellaware.test.auto.TestWikipediaPage@114304e]" name="afterTest" is-config="true" duration-ms="791" started-at="2015-04-08T17:00:13Z" finished-at="2015-04-08T17:00:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- org.wellaware.test.auto.TestWikipediaPage -->
-      <class name="org.wellaware.test.auto.TestTestAutomationPage">
-        <test-method status="PASS" signature="verifyHeaderCodeDrivenTesting()[pri:0, instance:org.wellaware.test.auto.TestTestAutomationPage@158dd66]" name="verifyHeaderCodeDrivenTesting" duration-ms="0" started-at="2015-04-08T17:00:13Z" finished-at="2015-04-08T17:00:13Z">
+    <test name="GRP-Wikipedia" duration-ms="18955" started-at="2015-04-09T06:18:56Z" finished-at="2015-04-09T06:19:15Z">
+      <class name="org.wellaware.test.auto.TestWikiTestAutomationPage">
+        <test-method status="PASS" signature="verifyHeaderCodeDrivenTesting()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@6a3d899a]" name="verifyHeaderCodeDrivenTesting" duration-ms="13" started-at="2015-04-09T01:18:56Z" finished-at="2015-04-09T01:18:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeaderCodeDrivenTesting -->
-        <test-method status="PASS" signature="verifyHeaderOverview()[pri:0, instance:org.wellaware.test.auto.TestTestAutomationPage@158dd66]" name="verifyHeaderOverview" duration-ms="0" started-at="2015-04-08T17:00:13Z" finished-at="2015-04-08T17:00:13Z">
+        <test-method status="PASS" signature="verifyHeaderOverview()[pri:0, instance:org.wellaware.test.auto.TestWikiTestAutomationPage@6a3d899a]" name="verifyHeaderOverview" duration-ms="3614" started-at="2015-04-09T01:18:56Z" finished-at="2015-04-09T01:19:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeaderOverview -->
-      </class> <!-- org.wellaware.test.auto.TestTestAutomationPage -->
-      <class name="org.wellaware.test.auto.TestAutomatedPageConfigurator">
-        <test-method status="PASS" signature="setup()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@1d45d18]" name="setup" is-config="true" duration-ms="119623" started-at="2015-04-08T16:56:40Z" finished-at="2015-04-08T16:58:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:org.wellaware.test.auto.TestWikipediaPage@114304e]" name="setup" is-config="true" duration-ms="29409" started-at="2015-04-08T16:58:39Z" finished-at="2015-04-08T16:59:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@1d45d18]" name="assertValueMatchesSelection" duration-ms="39053" started-at="2015-04-08T16:59:09Z" finished-at="2015-04-08T16:59:48Z">
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[java.lang.String cannot be cast to java.util.List]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: java.lang.String cannot be cast to java.util.List
-	at org.wellaware.test.auto.framework.util.WebElementQueryHelper.findElementsBySizzleCss(WebElementQueryHelper.java:128)
-	at org.wellaware.test.auto.framework.util.WebElementQueryHelper.findElementByExtendedCss(WebElementQueryHelper.java:89)
-	at org.wellaware.test.auto.framework.pages.AutomatedTestConfiguratorPage.selectDeviceAsPC(AutomatedTestConfiguratorPage.java:52)
-	at org.wellaware.test.auto.framework.pages.AutomatedTestConfiguratorPage.selectDevice(AutomatedTestConfiguratorPage.java:58)
-	at org.wellaware.test.auto.TestAutomatedPageConfigurator.assertValueMatchesSelection(TestAutomatedPageConfigurator.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+      </class> <!-- org.wellaware.test.auto.TestWikiTestAutomationPage -->
+      <class name="org.wellaware.test.auto.TestWikiContinuousDeliveryPage">
+        <test-method status="PASS" signature="assertValueMatchesSelection()[pri:0, instance:org.wellaware.test.auto.TestWikiContinuousDeliveryPage@7a75479a]" name="assertValueMatchesSelection" duration-ms="15314" started-at="2015-04-09T01:19:00Z" finished-at="2015-04-09T01:19:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertValueMatchesSelection -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:org.wellaware.test.auto.TestAutomatedPageConfigurator@1d45d18]" name="afterTest" is-config="true" duration-ms="25361" started-at="2015-04-08T16:59:48Z" finished-at="2015-04-08T17:00:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- org.wellaware.test.auto.TestAutomatedPageConfigurator -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- org.wellaware.test.auto.TestWikiContinuousDeliveryPage -->
+    </test> <!-- GRP-Wikipedia -->
+  </suite> <!-- auto by groups -->
 </testng-results>
